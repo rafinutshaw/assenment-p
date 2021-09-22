@@ -55,7 +55,7 @@ function CreateOrderScreen() {
             <div class="relative">
               <select
                 {...register("store_id")}
-                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                class="block appearance-none w-full   border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-state"
               >
                 {state.stores.map((e) => (
@@ -83,7 +83,7 @@ function CreateOrderScreen() {
             <div class="relative">
               <select
                 {...register("item_type")}
-                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                class="block appearance-none w-full   border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-state"
               >
                 {PRODUCT_TYPES.map((e) => (
@@ -110,7 +110,7 @@ function CreateOrderScreen() {
             </label>
             <input
               {...register("merchant_order_id")}
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              class="appearance-none block w-full   text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="merchantOrderId"
               placeholder="Type ID (optional)"
             />
@@ -132,7 +132,7 @@ function CreateOrderScreen() {
                 </label>
                 <input
                   {...register("recipient_name")}
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="appearance-none block w-full   text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="recipentName"
                   placeholder="Type Name"
                 />
@@ -150,7 +150,7 @@ function CreateOrderScreen() {
                 </label>
                 <input
                   {...register("recipient_phone")}
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="appearance-none block w-full   text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="recipentphone"
                   placeholder="Enter phone number"
                 />
@@ -170,7 +170,7 @@ function CreateOrderScreen() {
                   <div class="relative">
                     <select
                       {...register("recipient_city")}
-                      class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      class="block appearance-none w-full   border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="grid-state"
                     >
                       <option selected="true" disabled="disabled" value={-1}>
@@ -195,7 +195,7 @@ function CreateOrderScreen() {
                   <div class="relative">
                     <select
                       {...register("recipient_area")}
-                      class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      class="block appearance-none w-full   border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="grid-state"
                     >
                       <option selected="true" disabled="disabled" value={-1}>
@@ -220,7 +220,7 @@ function CreateOrderScreen() {
                   <div class="relative">
                     <select
                       {...register("recipient_city")}
-                      class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      class="block appearance-none w-full   border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="city"
                     >
                       <option selected="true" disabled="disabled" value={-1}>
@@ -276,7 +276,7 @@ function CreateOrderScreen() {
                 <div class="relative">
                   <select
                     {...register("delivery_type")}
-                    class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    class="block appearance-none w-full   border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="city"
                   >
                     {DELIVERY_TYPES.map((e) => (
@@ -310,7 +310,7 @@ function CreateOrderScreen() {
                     <div class="relative">
                       <select
                         {...register("item_weight")}
-                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        class="block appearance-none w-full   border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         id="city"
                       >
                         {WEIGHT_TYPES.map((e) => (
@@ -338,7 +338,7 @@ function CreateOrderScreen() {
                     <input
                       type="number"
                       {...register("item_quantity")}
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      class="appearance-none block w-full   text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="grid-password"
                       placeholder="Enter Quantity"
                     />
@@ -359,7 +359,7 @@ function CreateOrderScreen() {
                 </label>
                 <input
                   {...register("amount_to_collect")}
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  class="appearance-none block w-full   text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-password"
                   placeholder="Enter amount in BDT"
                 />
